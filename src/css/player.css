@@ -1,0 +1,95 @@
+/*
+ * Chromecast Video Player
+ * Copyright 2014 Denis Meyer
+ */
+.main {
+    margin-left: 10px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.btn-file input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.alert {
+    margin-bottom: 10px;
+}
+
+.messages {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.adjust {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#videoData {
+    margin-bottom: 5px;
+}
+
+#vidPlayerContainer {
+    margin-left: 10px;
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 650px;
+    overflow: hidden;
+    display: block;
+}
+
+.input span {
+    width: 150px;
+    display: inline-block;
+    border: 1px solid #E8E8E8;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.vjs-text-track-display {
+    font-size: 3em;
+}
+
+#footer {
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+    font-size: 0.8em;
+}

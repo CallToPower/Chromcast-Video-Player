@@ -1,0 +1,56 @@
+<!--
+  Chromecast Video Player
+  Copyright 2014 Denis Meyer
+-->
+<html>
+  <head>
+    <link href="lib/videojs/video-js.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/player.css" rel="stylesheet">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/videojs/video.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="js/player.js"></script>
+    <title>Chromecast Video Player</title>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Chromecast Video Player</h2>
+      <form id="videoData">
+        <span class="btn btn-default btn-file">
+          Select a video file <input id="videoInput" type="file" accept="video/*" />
+        </span>
+        <span class="btn btn-default btn-file">
+          Select a subtitle file (.vtt) <input id="subtitleInput" type="file" accept="application/x-subrip" />
+        </span>
+        <div id="btn_load" class="btn btn-primary btn-file disabled">
+          Load video <input type="submit" />
+        </div>
+      </form>
+      <div class="messages">
+        <div id="message"></div>
+        <div class="metadata">
+          <div id="videoMetadata" class="alert alert-info" role="alert">
+            No video file selected.
+          </div>
+          <div id="subtitleMetadata" class="alert alert-info" role="alert">
+            No subtitle file selected.
+          </div>
+        </div>
+      </div>
+      <div class="adjust hidden" id="adjust">
+        <div><span>Subtitle size</span>
+          <input id="decreaseSubtitleSize" value="-" type="button" />
+          <input id="increaseSubtitleSize" value="+" type="button" />
+        </div>
+      </div>
+      <div id="videoContainer">
+        <video id="video" class="video-js vjs-default-skin" width="640" height="360" poster="img/readyToCast.png"></video>
+      </div>
+      <div id="footer">
+        Copyright 2014 Denis Meyer, Version 1.0.0
+      </div>
+    </div>
+  </body>
+</html>
